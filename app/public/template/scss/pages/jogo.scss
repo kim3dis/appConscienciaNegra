@@ -1,0 +1,41 @@
+.areasscoreboard {
+    .equipes {
+        width: 90%;
+        height: 70px;
+        background: white;
+        border-radius: 10px;
+        display: grid;
+        grid-template-areas: "pos img nomeequipe pontos";
+        grid-auto-columns: 0.8fr 2.5fr 4fr 3fr;
+        margin-top: 20px;
+        margin-left: 5%;
+        .position {
+            grid-area: pos;
+            color: rgb(71, 71, 71);
+            padding: 20px 20px;
+        }
+        .img {
+            grid-area: img;
+            .imgprimeiro, .imgsegundo, .imgterceiro, .imgquarto, .imgquinto, .imgsexto, .imgsetimo, .imgoitavo {
+                background-image: url('../../../images/colors ball/azul.png');
+                background-size: 50px;
+                background-repeat: no-repeat;
+                height: 100%;
+                margin-top: 10px; 
+            }
+
+
+        }
+        .nomeequipe {
+            grid-area: nomeequipe;
+            color: rgb(71, 71, 71);
+            padding-top: 20px;
+        }
+        .pontos {
+            grid-area: pontos;
+            color: rgb(71, 71, 71);
+            padding-top: 20px;
+
+        }
+    }
+}

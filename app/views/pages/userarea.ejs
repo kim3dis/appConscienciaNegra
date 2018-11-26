@@ -1,0 +1,94 @@
+<link rel="stylesheet" href="template/css/pages/userarea.css">
+
+<!-- <a href="logout">Sair</a>  -->
+
+<div class="mainContainer">
+    <div class="userConfig">
+        <div class="userInfo">
+            <div class="areaimg">
+                <img src="images/userarea/user.png" height="70px">
+            </div>
+
+            <div class="areainfo">
+                <p id="nomeusuario" style="font-size: 19px; color: white; font-weight: bold; line-height: 2px; margin-top: 25px">
+                    <%= nome %>
+                </p>
+                <p id="typeUser" style="font-size: 14px; color: white; line-height: 2px">
+                    aluno
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="optContainer">
+        <a href="game" style="text-decoration: none;">
+            <div class="options">
+                <div class="imgopt game"></div>
+                <div class="optioninfo">
+                    <p> Jogo </p>
+                </div>
+            </div>
+        </a>
+
+
+
+
+        <a href="admin" style="text-decoration: none;">
+                <div class="options admin displaynone">
+                        <div class="imgopt control"></div>
+                    <div class="optioninfo">
+                        <p> Administração </p>
+                    </div>
+                </div>
+            </a>
+
+
+
+
+        <a href="feedback" style="text-decoration: none;">
+            <div class="options">
+                <div class="imgopt feed"></div>
+                <div class="optioninfo">
+                    <p> Avalie-nos </p>
+                </div>
+            </div>
+        </a>
+
+
+
+
+
+        <a href="about" style="text-decoration: none;">
+            <div class="options">
+                <div class="imgopt about"></div>
+                <div class="optioninfo">
+                    <p> Sobre </p>
+                </div>
+            </div>
+        </a>
+
+
+
+
+
+        <a href="logout" style="text-decoration: none;">
+            <div class="options">
+                <div class="imgopt logout"></div>
+                <div class="optioninfo">
+                   <p> Sair </p>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+<script>
+    var nomeEjs = "<%= nome %>";
+    if(nomeEjs == "kim3dis"){
+        document.querySelector(".admin").classList.remove("displaynone");
+        document.querySelector("#typeUser").innerText = "administrador";
+    }
+</script>

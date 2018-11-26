@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">    
+    <link rel="stylesheet" href="template/css/register.css">
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="headerLogin">
+            <h3 style="color: #F1792B;">Registre-se.</h3>
+        </div>
+        <div class="containerLogin">
+            <form action="verificarCad" method="POST">
+                <center>
+                <input type="text" name="NOME" class="cadNickname" id="nickname" placeholder="nome">
+                <input type="password" name="SENHA" class="cadPassword" id="password" placeholder="senha">
+                <input type="password" name="SENHA" class="cadPasswordConfirm" id="confirmpassword" placeholder="confirme sua senha">    
+                <input type="submit" value="Registrar" class="btnReg">
+                </center>
+            </form>
+        </div>
+
+        
+        <div class="footerLogin">
+            <p>Já possui uma conta? <a href="/login" style="color: #F1792B;">Entrar.</a></p>
+        </div>
+
+    </div>
+
+</body>
+
+
+</html>

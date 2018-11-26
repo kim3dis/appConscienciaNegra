@@ -1,0 +1,110 @@
+<link rel="stylesheet" href="template/css/pages/jogo.css">
+
+
+<div><h4 style="padding: 0 5%;">Classificação</h4></div>
+
+<div class="areasscoreboard">
+    <div class="equipes">
+        <div class="position">1</div>
+        <div class="img">
+            <div class="imgprimeiro"></div>
+        </div>
+        <div class="nomeequipe nomeprimeiro">
+            <%= primeiro %>
+        </div>
+        <div class="pontos"><%= primeiroponto %> pontos</div>
+    </div>
+    <div class="equipes">
+        <div class="position">2</div>
+        <div class="img">
+            <div class="imgsegundo"></div>
+        </div>
+        <div class="nomeequipe nomesegundo">
+            <%= segundo %>
+        </div>
+        <div class="pontos"><%= segundoponto %> pontos</div>
+    </div>
+    <div class="equipes">
+        <div class="position">3</div>
+        <div class="img">
+            <div class="imgterceiro"></div>
+        </div>
+        <div class="nomeequipe nometerceiro">
+            <%= terceiro %>
+        </div>
+        <div class="pontos"><%= terceiroponto %> pontos</div>
+    </div>
+    <div class="equipes">
+        <div class="position">4</div>
+        <div class="img">
+            <div class="imgquarto"></div>
+        </div>
+        <div class="nomeequipe nomequarto">
+            <%= quarto %>
+        </div>
+        <div class="pontos"><%= quartoponto %> pontos</div>
+    </div>
+    <div class="equipes">
+        <div class="position">5</div>
+        <div class="img">
+            <div class="imgquinto"></div>
+        </div>
+        <div class="nomeequipe nomequinto">
+            <%= quinto %>
+        </div>
+        <div class="pontos"><%= quintoponto %> pontos</div>
+    </div>
+    <div class="equipes">
+        <div class="position">6</div>
+        <div class="img">
+            <div class="imgsexto"></div>
+        </div>
+        <div class="nomeequipe nomesexto">
+            <%= sexto %>
+        </div>
+        <div class="pontos"><%= sextoponto %> pontos</div>
+    </div>
+    <div class="equipes">
+        <div class="position">7</div>
+        <div class="img">
+            <div class="imgsetimo"></div>
+        </div>
+        <div class="nomeequipe nomesetimo">
+            <%= setimo %>
+        </div>
+        <div class="pontos"><%= setimoponto %> pontos</div>
+    </div>
+    <div class="equipes">
+        <div class="position">8</div>
+        <div class="img">
+            <div class="imgoitavo"></div>
+        </div>
+        <div class="nomeequipe nomeoitavo">
+            <%= oitavo %>
+        </div>
+        <div class="pontos"><%= oitavoponto %> pontos</div>
+    </div>
+    <div style="height: 80px; width: 100%;"></div>
+</div>
+
+<script>
+
+    var primeiro = document.querySelector('.nomeprimeiro').innerText;
+    var segundo = document.querySelector('.nomesegundo').innerText;
+    var terceiro = document.querySelector('.nometerceiro').innerText;
+    var quarto = document.querySelector('.nomequarto').innerText;
+    var quinto = document.querySelector('.nomequinto').innerText;
+    var sexto = document.querySelector('.nomesexto').innerText;
+    var setimo = document.querySelector('.nomesetimo').innerText;
+    var oitavo = document.querySelector('.nomeoitavo').innerText;
+
+    document.querySelector('.imgprimeiro').style.backgroundImage = "url('../../../images/colors ball/"+ primeiro +".png')";
+    document.querySelector('.imgsegundo').style.backgroundImage = "url('../../../images/colors ball/"+ segundo +".png')";
+    document.querySelector('.imgterceiro').style.backgroundImage = "url('../../../images/colors ball/"+ terceiro +".png')";
+    document.querySelector('.imgquarto').style.backgroundImage = "url('../../../images/colors ball/"+ quarto +".png')";
+    document.querySelector('.imgquinto').style.backgroundImage = "url('../../../images/colors ball/"+ quinto +".png')";
+    document.querySelector('.imgsexto').style.backgroundImage = "url('../../../images/colors ball/"+ sexto +".png')";
+    document.querySelector('.imgsetimo').style.backgroundImage = "url('../../../images/colors ball/"+ setimo +".png')";
+    document.querySelector('.imgoitavo').style.backgroundImage = "url('../../../images/colors ball/"+ oitavo +".png')";
+
+</script>

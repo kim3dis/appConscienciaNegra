@@ -1,0 +1,105 @@
+$laranjaEscuro: #F1792B;
+$amareloClaro: rgb(255, 189, 51);
+$laranjaClaro: rgb(255, 163, 47);
+
+
+a {
+    outline:none;
+    text-decoration: none;
+}
+
+.mainContainer {
+    .userConfig {
+        position: absolute;
+        margin: -220px 0px;
+        padding: 0px 0px;
+        width: 100%;
+        height: 200px;
+        background-image: linear-gradient(to top right, #F1792B, rgb(248, 153, 89));
+        box-shadow: 0px 2px 100px rgba(0, 0, 0, 0.486);
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        
+        .userInfo {
+            margin: 85px 35px;
+            display: grid;
+            grid-template-areas: "areaimg areainfo";
+            grid-auto-columns: 2fr 4fr;
+            .areaimg {
+                grid-area: areaimg;
+                // border: 1px solid #000;
+            }
+            .areainfo {
+                grid-area: areainfo;
+                // border: 1px solid #000;
+            }
+        }
+    }
+
+    .optContainer {
+        margin-top: 120px;
+        width: 100%;
+        // position: absolute;
+
+        .margintop {
+            height: 30px;
+            width: 100%;
+        }
+
+        .options {
+            display: grid;
+            grid-template-areas: "img info";
+            grid-auto-columns: 1fr 5fr;
+            width: 100%;
+            height: 50px;
+            // background: rgb(224, 224, 224);
+            border-left: 5px solid rgb(236, 236, 236);
+            padding-top: 15px;
+            padding-left: 35px;
+            // margin-left: 7.5%;
+            color: rgba(0, 0, 0, 0.589);
+            text-decoration: none;
+            font-weight: bold;
+            outline:none;
+            margin-top: 30px; 
+            &:hover, &:focus {
+                border-left: 5px solid rgb(219, 108, 34);
+            }
+            
+        }
+        .optioninfo {
+            grid-area: info;
+            padding: 5px 5px;
+        }
+        .imgopt {
+            grid-area: img;
+            // height: 40px;
+            // width: 40px;
+            margin-top: -8px;
+            background-size: 50px;
+            background-repeat: no-repeat;
+            height: 80px;
+            // border: 1px solid #000;
+            // background-position: center;
+        }
+        .game {
+            
+            background-image: url('../../../images/userarea/draw_in.png');
+        }
+        .feed {
+            background-image: url('../../../images/userarea/vote_in.png');
+        }
+        .about {
+            background-image: url('../../../images/userarea/about_in.png');
+        }
+        .logout {
+            background-image: url('../../../images/userarea/logout_in.png');
+        }
+        .control {
+            background-image: url('../../../images/userarea/control_in.png');
+        }
+        .displaynone {
+            display: none;
+        }
+    }
+}

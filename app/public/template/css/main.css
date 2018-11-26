@@ -1,0 +1,13 @@
+body {
+  background: #ececec; }
+
+html, body {
+  height: 100%; }
+
+.grid {
+  display: grid; }
+
+.app {
+  grid-template-areas: "title" "contentarea" "navigation"; }
+
+/*# sourceMappingURL=main.css.map */

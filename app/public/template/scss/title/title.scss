@@ -1,0 +1,23 @@
+$laranjaEscuro: #F1792B;
+$amareloClaro: rgb(255, 189, 51);
+$laranjaClaro: rgb(255, 163, 47);
+
+.title {
+    grid-template-areas: title;
+    // position: fixed;
+    height: 60px;
+    width: 100%;
+    // border: 1px solid #000;
+    .title_menu {
+        color: $laranjaEscuro;
+        h4 {
+            position: absolute; 
+            padding: 13px 13px;
+            vertical-align: middle;
+            font-weight: bold;
+            font-size: 1.8em;
+        }
+    }
+
+}
+

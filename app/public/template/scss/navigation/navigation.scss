@@ -1,0 +1,46 @@
+$laranjaEscuro: #F1792B;
+$amareloClaro: rgb(255, 189, 51);
+$laranjaClaro: rgb(255, 163, 47);
+
+a {
+    outline:none;
+    text-decoration: none;
+}
+
+.navigation {
+    grid-template-areas: navigation;
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    bottom: 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+
+    .options {
+        color: white;
+        display: inline-block;
+        height: 100%;
+        width: 19%;
+        // border: 1px solid #c1c1c1;
+        background-size: 35%;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    .homeopt {
+        background-image: url('../../../images/navbar/home.png');
+    }
+    .graphicopt {
+        background-image: url('../../../images/navbar/graphic.png');
+    }
+    .configopt {
+        background-image: url('../../../images/navbar/config1.png');
+    }
+    .feedopt {
+        background-image: url('../../../images/navbar/feed.png');
+    }
+    .chatopt {
+        background-image: url('../../../images/navbar/chat.png');
+    }
+}

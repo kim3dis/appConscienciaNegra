@@ -1,0 +1,14 @@
+.title {
+  grid-template-areas: title;
+  height: 60px;
+  width: 100%; }
+  .title .title_menu {
+    color: #F1792B; }
+    .title .title_menu h4 {
+      position: absolute;
+      padding: 13px 13px;
+      vertical-align: middle;
+      font-weight: bold;
+      font-size: 1.8em; }
+
+/*# sourceMappingURL=title.css.map */

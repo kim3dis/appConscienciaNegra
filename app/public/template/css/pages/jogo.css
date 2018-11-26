@@ -1,0 +1,32 @@
+.areasscoreboard .equipes {
+  width: 90%;
+  height: 70px;
+  background: white;
+  border-radius: 10px;
+  display: grid;
+  grid-template-areas: "pos img nomeequipe pontos";
+  grid-auto-columns: 0.8fr 2.5fr 4fr 3fr;
+  margin-top: 20px;
+  margin-left: 5%; }
+  .areasscoreboard .equipes .position {
+    grid-area: pos;
+    color: #474747;
+    padding: 20px 20px; }
+  .areasscoreboard .equipes .img {
+    grid-area: img; }
+    .areasscoreboard .equipes .img .imgprimeiro, .areasscoreboard .equipes .img .imgsegundo, .areasscoreboard .equipes .img .imgterceiro, .areasscoreboard .equipes .img .imgquarto, .areasscoreboard .equipes .img .imgquinto, .areasscoreboard .equipes .img .imgsexto, .areasscoreboard .equipes .img .imgsetimo, .areasscoreboard .equipes .img .imgoitavo {
+      background-image: url("../../../images/colors ball/azul.png");
+      background-size: 50px;
+      background-repeat: no-repeat;
+      height: 100%;
+      margin-top: 10px; }
+  .areasscoreboard .equipes .nomeequipe {
+    grid-area: nomeequipe;
+    color: #474747;
+    padding-top: 20px; }
+  .areasscoreboard .equipes .pontos {
+    grid-area: pontos;
+    color: #474747;
+    padding-top: 20px; }
+
+/*# sourceMappingURL=jogo.css.map */

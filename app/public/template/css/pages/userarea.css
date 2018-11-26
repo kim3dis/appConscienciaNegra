@@ -1,0 +1,68 @@
+a {
+  outline: none;
+  text-decoration: none; }
+
+.mainContainer .userConfig {
+  position: absolute;
+  margin: -220px 0px;
+  padding: 0px 0px;
+  width: 100%;
+  height: 200px;
+  background-image: linear-gradient(to top right, #F1792B, #f89959);
+  box-shadow: 0px 2px 100px rgba(0, 0, 0, 0.486);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px; }
+  .mainContainer .userConfig .userInfo {
+    margin: 85px 35px;
+    display: grid;
+    grid-template-areas: "areaimg areainfo";
+    grid-auto-columns: 2fr 4fr; }
+    .mainContainer .userConfig .userInfo .areaimg {
+      grid-area: areaimg; }
+    .mainContainer .userConfig .userInfo .areainfo {
+      grid-area: areainfo; }
+.mainContainer .optContainer {
+  margin-top: 120px;
+  width: 100%; }
+  .mainContainer .optContainer .margintop {
+    height: 30px;
+    width: 100%; }
+  .mainContainer .optContainer .options {
+    display: grid;
+    grid-template-areas: "img info";
+    grid-auto-columns: 1fr 5fr;
+    width: 100%;
+    height: 50px;
+    border-left: 5px solid #ececec;
+    padding-top: 15px;
+    padding-left: 35px;
+    color: rgba(0, 0, 0, 0.589);
+    text-decoration: none;
+    font-weight: bold;
+    outline: none;
+    margin-top: 30px; }
+    .mainContainer .optContainer .options:hover, .mainContainer .optContainer .options:focus {
+      border-left: 5px solid #db6c22; }
+  .mainContainer .optContainer .optioninfo {
+    grid-area: info;
+    padding: 5px 5px; }
+  .mainContainer .optContainer .imgopt {
+    grid-area: img;
+    margin-top: -8px;
+    background-size: 50px;
+    background-repeat: no-repeat;
+    height: 80px; }
+  .mainContainer .optContainer .game {
+    background-image: url("../../../images/userarea/draw_in.png"); }
+  .mainContainer .optContainer .feed {
+    background-image: url("../../../images/userarea/vote_in.png"); }
+  .mainContainer .optContainer .about {
+    background-image: url("../../../images/userarea/about_in.png"); }
+  .mainContainer .optContainer .logout {
+    background-image: url("../../../images/userarea/logout_in.png"); }
+  .mainContainer .optContainer .control {
+    background-image: url("../../../images/userarea/control_in.png"); }
+  .mainContainer .optContainer .displaynone {
+    display: none; }
+
+/*# sourceMappingURL=userarea.css.map */

@@ -1,0 +1,60 @@
+$laranjaEscuro: #F1792B;
+$amareloClaro: rgb(255, 189, 51);
+$laranjaClaro: rgb(255, 163, 47);
+
+.cronograma {
+    // border: px solid #000;
+    margin-top: 10px;
+
+    .cronos {
+        width: 100%;
+        height: 200px;
+        // border-bottom: 1px solid rgba(255, 161, 47, 0.719);
+        .cronoscroll {
+            display: grid;
+            grid-template-areas: "horas info";
+            grid-auto-columns: 1fr 3fr;
+        
+            .cronos_horas {
+                grid-area: horas;
+                margin-top: 80px;
+                text-align: center;
+                color: rgb(119, 119, 119);
+
+            }
+            .cronos_info {
+                grid-area: info;
+                background: rgba(248, 166, 111, 0.247);
+                color: #F1792B;
+                padding: 5px 10px 5px 10px;
+                height: 120px;
+                width: 80%;
+                border-radius: 5px;
+                margin-top: 40px;
+                // margin-right: 40px;
+                // overflow-x: scroll;
+                line-height: 20px;
+                &:hover {
+                    background: rgba(248, 166, 111, 0.37);
+                }
+            }
+        }
+    }
+    .linecronos {
+        background: rgba(255, 161, 47, 0.719);
+        height: 1px;
+        width: 100%;
+        &::before {
+            border: 10px solid transparent;
+            border-left-color: rgb(255, 130, 47);
+            content: "";
+            // left: -20px;
+            margin-top: -9.5px;
+            position: absolute;
+        }
+    }
+    .slideh {
+        overflow-y: scroll;
+    }
+
+}
