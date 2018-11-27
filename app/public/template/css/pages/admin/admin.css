@@ -68,12 +68,12 @@
     .equipesAdmin .equipe #addCinza label, .equipesAdmin .equipe #rmCinza label {
       background: #d9d2d2; }
     .equipesAdmin .equipe #addMarrom label, .equipesAdmin .equipe #rmMarrom label {
-      background: #d9d2d2; }
+      background: #5e3b2a; }
     .equipesAdmin .equipe #addRoxa label, .equipesAdmin .equipe #rmRoxa label {
-      background: #d9d2d2; }
-    .equipesAdmin .equipe #addVerde label, .equipesAdmin .equipe #rmRoxa label {
-      background: #d9d2d2; }
-    .equipesAdmin .equipe #addVermelha label, .equipesAdmin .equipe #rmRoxa label {
-      background: #d9d2d2; }
+      background: #5a4679; }
+    .equipesAdmin .equipe #addVerde label, .equipesAdmin .equipe #rmVerde label {
+      background: #00703d; }
+    .equipesAdmin .equipe #addVermelha label, .equipesAdmin .equipe #rmVermelha label {
+      background: #f4292a; }
 
 /*# sourceMappingURL=admin.css.map */

@@ -37,19 +37,28 @@
 
 
 
-        <a href="admin" style="text-decoration: none;">
-                <div class="options admin displaynone">
-                        <div class="imgopt control"></div>
-                    <div class="optioninfo">
-                        <p> Administração </p>
-                    </div>
+        <a href="adminnn" style="text-decoration: none;">
+            <div class="options admin displaynone">
+                    <div class="imgopt control"></div>
+                <div class="optioninfo">
+                    <p> Administração </p>
                 </div>
-            </a>
+            </div>
+        </a>
+
+        <a href="data" style="text-decoration: none;">
+            <div class="options admin">
+                    <div class="imgopt data"></div>
+                <div class="optioninfo">
+                    <p> Informações </p>
+                </div>
+            </div>
+        </a>
 
 
 
 
-        <a href="feedback" style="text-decoration: none;">
+        <a href="research" style="text-decoration: none;">
             <div class="options">
                 <div class="imgopt feed"></div>
                 <div class="optioninfo">
@@ -62,7 +71,7 @@
 
 
 
-        <a href="about" style="text-decoration: none;">
+        <a href="about" style="text-decoration: none; display: none;">
             <div class="options">
                 <div class="imgopt about"></div>
                 <div class="optioninfo">
@@ -85,9 +94,21 @@
         </a>
     </div>
 </div>
+<br><br><br><br>
 <script>
     var nomeEjs = "<%= nome %>";
-    if(nomeEjs == "kim3dis"){
+    if(nomeEjs == "kim3dis" || 
+        nomeEjs == "hippiestar" ||
+        nomeEjs == "Hippiestar" ||
+        nomeEjs == "HippieStar" ||
+        nomeEjs == "anavictória" ||
+        nomeEjs == "Anavictória" ||
+        nomeEjs == "coldsun" ||
+        nomeEjs == "Coldsun" ||
+        nomeEjs == "ColdSun" ||
+        nomeEjs == "thecoldsun" ||
+        nomeEjs == "TheColdsun"
+    ){
         document.querySelector(".admin").classList.remove("displaynone");
         document.querySelector("#typeUser").innerText = "administrador";
     }

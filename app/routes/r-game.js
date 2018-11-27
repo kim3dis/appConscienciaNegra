@@ -1,7 +1,13 @@
 module.exports = function(app) {
     app.get('/game', function(req, res){
+        //verificar autorização
+        (function(req, res){
+            if(!req.session.user){
+              res.redirect('login');  
+            }
+        })(req, res);
+        
         var conn = require('../../config/dbconnect');
-        var store = require('store');
         
         conn.query("SELECT * FROM equipes order by pontos", function(error, result){
             // for (let i = 0; i < result.length; i++) {

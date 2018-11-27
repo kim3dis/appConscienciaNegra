@@ -1,0 +1,23 @@
+.options {
+    margin-bottom: 40px;
+    input {
+        // -webkit-appearance: none;
+        // position: absolute;
+        // background: black;
+        margin-left: 50px;
+    }
+    label {
+        // background: rgb(235, 120, 44);
+        width: 70%;
+        height: 30px;
+    }
+}
+#submit {
+    width: 90%;
+    height: 40px;
+    background: rgb(235, 120, 44);
+    color: white;
+    border: none;
+    font-weight: bold;
+    border-radius: 10px;
+}

@@ -1,0 +1,115 @@
+<!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->
+
+<div>
+
+<table>
+        <h5 style="text-align: center;">Dados sobre Raça/Cor</h5>
+    <tr>
+        <th>Amarelos</th>
+        <th>Brancos</th>
+        <th>Indígenas</th>
+        <th>Negros</th>
+
+    </tr>
+    <tr>
+        <td class="amareloqntd"> <%= amarelosqntd %> </td>
+        <td class="brancosqntd"> <%= brancosqntd %>  </td>
+        <td class="indigenasqntd"> <%= indigenasqntd %>  </td>
+        <td class="negrosqntd"> <%= negrosqntd %>  </td>
+    </tr>
+    <tr>
+        <td class="amarelopc"></td>
+        <td class="brancopc"></td>
+        <td class="indigenapc"></td>
+        <td class="negropc"></td>
+    </tr>
+</table>
+<table>
+    <tr>
+        <th>Pardos</th>
+        <th>Não sabem</th>
+    </tr>
+    <tr>
+        <td class="pardosqntd"> <%= pardosqntd %> </td>
+        <td class="naosabemqntd"> <%= naosabemqntd %> </td>
+    </tr>
+    <tr>
+        <td class="pardopc"></td>
+        <td class="naosabempc"></td>
+    </tr>
+
+</table>
+</div>
+
+<script>
+    var amareloqnt = document.querySelector('.amareloqntd').innerText;
+    var brancosqntd = document.querySelector('.brancosqntd').innerText;
+    var indigenasqntd = document.querySelector('.indigenasqntd').innerText;
+    var negrosqntd = document.querySelector('.negrosqntd').innerText;
+    var pardosqntd = document.querySelector('.pardosqntd').innerText;
+    var naosabemqntd = document.querySelector('.naosabemqntd').innerText;
+
+    var totalVotado = parseInt(amareloqnt) + parseInt(brancosqntd) + parseInt(indigenasqntd) +
+    parseInt(negrosqntd) + parseInt(pardosqntd) + parseInt(naosabemqntd);
+    
+    var porcAmarelos = (amareloqnt / totalVotado) * 100;
+    var porcBrancos = (brancosqntd / totalVotado) * 100;
+    var porcIndigenas = (indigenasqntd / totalVotado) * 100;
+    var porcNegros = (negrosqntd / totalVotado) * 100;
+    var porcPardos = (pardosqntd / totalVotado) * 100;
+    var porcNaosabem = (naosabemqntd / totalVotado) * 100;
+
+    document.querySelector('.amarelopc').innerText = parseInt(porcAmarelos) + "%";
+    document.querySelector('.brancopc').innerText = parseInt(porcBrancos) + "%";
+    document.querySelector('.indigenapc').innerText = parseInt(porcIndigenas) + "%";
+    document.querySelector('.negropc').innerText = parseInt(porcNegros) + "%";
+    document.querySelector('.pardopc').innerText = parseInt(porcPardos) + "%";
+    document.querySelector('.naosabempc').innerText = parseInt(porcNaosabem) + "%";
+
+
+</script>
+
+<br><br><br>
+
+
+<table>
+    <h5 style="text-align: center;">Votantes</h5>
+    <tr>
+        <th>#</th>
+        <th>Nome</th>
+        <th>Entendeu</th>
+        <th>Raça/Cor</th>
+        <th>Tema</th>
+    </tr>
+    <% for(var i=0; i < result.length; i++) { %>
+        <% var number = 1 + i %>
+        <tr>
+            <td><%= number %></td>
+            <td><%= result[i].NOME %></td>
+            <td><%= result[i].clareza %></td>
+            <td><%= result[i].considera%></td>
+            <td><%= result[i].abordado %></td>
+        </tr>
+    <% } %>
+</table>
+ <br>
+ <br><br><br>
+<body>
+    <style>
+        table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+    </style>
+</body>

@@ -20,7 +20,7 @@
     <div class="equipe">
         <h5 style="color: rgb(170, 170, 38); font-weight: bold">Amarela</h5>
         <form action="addAmareloPontos" method="post" id="addAmarelo">
-            <span>(+) Adicionar pontos</span>
+            <span>Adicionar pontos</span>
             <br>
             <input type="radio" id="addAmareloCinco" value="5" name="positivo" onclick="addAmarelo()">
             <label for="addAmareloCinco">+5</label>
@@ -35,7 +35,7 @@
         </form>
 <br>
         <form action="rmAmareloPontos" method="post" id="rmAmarelo">
-            <span>(-) Remover pontos</span>
+            <span>Remover pontos</span>
             <br>
             <input type="radio" id="amarelon5" value="5" name="negativo" onclick="rmAmarelo()">
             <label for="amarelon5">-5</label>
@@ -56,31 +56,31 @@
         <form action="addAzulPontos" method="post" id="addAzul">
             <span>Adicionar pontos</span>
             <br>
-            <input type="radio" value="5" name="positivo" onclick="addAzul()">
-            <label for="5">+5</label>
-            <input type="radio" value="4" name="positivo" onclick="addAzul()">
-            <label for="4">+4</label>
-            <input type="radio" value="3" name="positivo" onclick="addAzul()">
-            <label for="3">+3</label>
-            <input type="radio" value="2" name="positivo" onclick="addAzul()">
-            <label for="2">+2</label>
-            <input type="radio" value="1" name="positivo" onclick="addAzul()">
-            <label for="1">+1</label>                
+            <input type="radio" id="azulp5" value="5" name="positivo" onclick="addAzul()">
+            <label for="azulp5">+5</label>
+            <input type="radio" id="azulp4" value="4" name="positivo" onclick="addAzul()">
+            <label for="azulp4">+4</label>
+            <input type="radio" id="azulp3" value="3" name="positivo" onclick="addAzul()">
+            <label for="azulp3">+3</label>
+            <input type="radio" id="azulp2" value="2" name="positivo" onclick="addAzul()">
+            <label for="azulp2">+2</label>
+            <input type="radio" id="azulp1" value="1" name="positivo" onclick="addAzul()">
+            <label for="azulp1">+1</label>                
         </form>
 
         <form action="rmAzulPontos" method="post" id="rmAzul">
             <span>Remover pontos</span>
             <br>
-            <input type="radio" value="5" name="negativo" onclick="rmAzul()">
-            <label for="amarelon5">-5</label>
-            <input type="radio" value="4" name="negativo" onclick="rmAzul()">
-            <label for="amarelon5">-4</label>
-            <input type="radio" value="3" name="negativo" onclick="rmAzul()">
-            <label for="amarelon5">-3</label>
-            <input type="radio" value="2" name="negativo" onclick="rmAzul()">
-            <label for="amarelon5">-2</label>
-            <input type="radio" value="1" name="negativo" onclick="rmAzul()">
-            <label for="amarelon5">-1</label>
+            <input type="radio" id="azuln5" value="5" name="negativo" onclick="rmAzul()">
+            <label for="azuln5">-5</label>
+            <input type="radio" id="azuln4" value="4" name="negativo" onclick="rmAzul()">
+            <label for="azuln4">-4</label>
+            <input type="radio" id="azuln3" value="3" name="negativo" onclick="rmAzul()">
+            <label for="azuln3">-3</label>
+            <input type="radio" id="azuln2" value="2" name="negativo" onclick="rmAzul()">
+            <label for="azuln2">-2</label>
+            <input type="radio" id="azuln1" value="1" name="negativo" onclick="rmAzul()">
+            <label for="azuln1">-1</label>
         </form>
 
     </div>
@@ -89,105 +89,87 @@
         <form action="addCinzaPontos" method="post" id="addCinza">
             <span>Adicionar pontos</span>
             <br>
-            <input type="radio" value="5" name="positivo" onclick="addCinza()">
-            <label for="5">+5</label>
-            <input type="radio" value="4" name="positivo" onclick="addCinza()">
-            <label for="4">+4</label>
-            <input type="radio" value="3" name="positivo" onclick="addCinza()">
-            <label for="3">+3</label>
-            <input type="radio" value="2" name="positivo" onclick="addCinza()">
-            <label for="2">+2</label>
-            <input type="radio" value="1" name="positivo" onclick="addCinza()">
-            <label for="1">+1</label>
+            <input type="radio" id="cinzap5" value="5" name="positivo" onclick="addCinza()">
+            <label for="cinzap5">+5</label>
+            <input type="radio" id="cinzap4" value="4" name="positivo" onclick="addCinza()">
+            <label for="cinzap4">+4</label>
+            <input type="radio" id="cinzap3" value="3" name="positivo" onclick="addCinza()">
+            <label for="cinzap3">+3</label>
+            <input type="radio" id="cinzap2" value="2" name="positivo" onclick="addCinza()">
+            <label for="cinzap2">+2</label>
+            <input type="radio" id="cinzap1" value="1" name="positivo" onclick="addCinza()">
+            <label for="cinzap1">+1</label>
         </form>
 <br>
-            <form action="rmCinzaPontos" method="post" id="rmCinza">
-                <span>Remover pontos</span>
-                <br>
-    
-                <input type="radio" value="5" name="negativo" onclick="rmCinza()">
-                <label for="amarelon5">-5</label>
-    
-                <input type="radio" value="4" name="negativo" onclick="rmCinza()">
-                <label for="amarelon5">-4</label>
-    
-                <input type="radio" value="3" name="negativo" onclick="rmCinza()">
-                <label for="amarelon5">-3</label>
-    
-                <input type="radio" value="2" name="negativo" onclick="rmCinza()">
-                <label for="amarelon5">-2</label>
-    
-                <input type="radio" value="1" name="negativo" onclick="rmCinza()">
-                <label for="amarelon5">-1</label>
-                <!-- <input type="submit" value="enviar"> -->
-            </form>
+        <form action="rmCinzaPontos" method="post" id="rmCinza">
+            <span>Remover pontos</span>
+            <br>
+            <input type="radio" id="cinzan5" value="5" name="negativo" onclick="rmCinza()">
+            <label for="cinzan5">-5</label>
+
+            <input type="radio" id="cinzan4" value="4" name="negativo" onclick="rmCinza()">
+            <label for="cinzan4">-4</label>
+
+            <input type="radio" id="cinzan3" value="3" name="negativo" onclick="rmCinza()">
+            <label for="cinzan3">-3</label>
+
+            <input type="radio" id="cinzan2" value="2" name="negativo" onclick="rmCinza()">
+            <label for="cinzan2">-2</label>
+
+            <input type="radio" id="cinzan1" value="1" name="negativo" onclick="rmCinza()">
+            <label for="cinzan1">-1</label>
+            <!-- <input type="submit" value="enviar"> -->
+        </form>
 
     </div>
     <div class="equipe">
-        <h5>Laranja</h5>
+        <h5 style="color: rgb(255, 117, 8); font-weight: bold">Laranja</h5>
 
         <form action="addLaranjaPontos" method="post" id="addLaranja">
-                <span>Adicionar pontos</span>
-                <br>
-    
-                <input type="radio" value="5" name="positivo" onclick="addLaranja()">
-                <label for="5">+5</label>
-    
-                <input type="radio" value="4" name="positivo" onclick="addLaranja()">
-                <label for="4">+4</label>
-    
-                <input type="radio" value="3" name="positivo" onclick="addLaranja()">
-                <label for="3">+3</label>
-    
-                <input type="radio" value="2" name="positivo" onclick="addLaranja()">
-                <label for="2">+2</label>
-    
-                <input type="radio" value="1" name="positivo" onclick="addLaranja()">
-                <label for="1">+1</label>               
-            </form>
-    
-    
-            <form action="rmLaranjaPontos" method="post" id="rmLaranja">
-                <span>Remover pontos</span>
-                <br>
-    
-                <input type="radio" value="5" name="negativo" onclick="rmLaranja()">
-                <label for="amarelon5">-5</label>
-    
-                <input type="radio" value="4" name="negativo" onclick="rmLaranja()">
-                <label for="amarelon5">-4</label>
-    
-                <input type="radio" value="3" name="negativo" onclick="rmLaranja()">
-                <label for="amarelon5">-3</label>
-    
-                <input type="radio" value="2" name="negativo" onclick="rmLaranja()">
-                <label for="amarelon5">-2</label>
-    
-                <input type="radio" value="1" name="negativo" onclick="rmLaranja()">
-                <label for="amarelon5">-1</label>
-            </form>
+            <span>Adicionar pontos</span>
+            <br>
+            <input type="radio" id="laranjap5" value="5" name="positivo" onclick="addLaranja()">
+            <label for="laranjap5">+5</label>
+            <input type="radio" id="laranjap4" value="4" name="positivo" onclick="addLaranja()">
+            <label for="laranjap4">+4</label>
+            <input type="radio" id="laranjap3" value="3" name="positivo" onclick="addLaranja()">
+            <label for="laranjap3">+3</label>
+            <input type="radio" id="laranjap2" value="2" name="positivo" onclick="addLaranja()">
+            <label for="laranjap2">+2</label>
+            <input type="radio" id="laranjap1" value="1" name="positivo" onclick="addLaranja()">
+            <label for="laranjap1">+1</label>               
+        </form>
+        <form action="rmLaranjaPontos" method="post" id="rmLaranja">
+            <span>Remover pontos</span>
+            <br>
+            <input type="radio" id="laranjan5" value="5" name="negativo" onclick="rmLaranja()">
+            <label for="laranjan5">-5</label>
+            <input type="radio" id="laranjan4" value="4" name="negativo" onclick="rmLaranja()">
+            <label for="laranjan4">-4</label>
+            <input type="radio" id="laranjan3" value="3" name="negativo" onclick="rmLaranja()">
+            <label for="laranjan3">-3</label>
+            <input type="radio" id="laranjan2" value="2" name="negativo" onclick="rmLaranja()">
+            <label for="laranjan2">-2</label>
+            <input type="radio" id="laranjan1" value="1" name="negativo" onclick="rmLaranja()">
+            <label for="laranjan1">-1</label>
+        </form>
 
     </div>
     <div class="equipe">
-        <h5>Marrom</h5>
+        <h5 style="color: rgb(85, 51, 37); font-weight: bold">Marrom</h5>
         <form action="addMarromPontos" method="post" id="addMarrom">
                 <span>Adicionar pontos</span>
                 <br>
-    
-                <input type="radio" value="5" name="positivo" onclick="addMarrom()">
-                <label for="5">+5</label>
-    
-                <input type="radio" value="4" name="positivo" onclick="addMarrom()">
-                <label for="4">+4</label>
-    
-                <input type="radio" value="3" name="positivo" onclick="addMarrom()">
-                <label for="3">+3</label>
-    
-                <input type="radio" value="2" name="positivo" onclick="addMarrom()">
-                <label for="2">+2</label>
-    
-                <input type="radio" value="1" name="positivo" onclick="addMarrom()">
-                <label for="1">+1</label>               
+                <input type="radio" id="marromp5" value="5" name="positivo" onclick="addMarrom()">
+                <label for="marromp5">+5</label>
+                <input type="radio" id="marromp4" value="4" name="positivo" onclick="addMarrom()">
+                <label for="marromp4">+4</label>
+                <input type="radio" id="marromp3" value="3" name="positivo" onclick="addMarrom()">
+                <label for="marromp3">+3</label>
+                <input type="radio" id="marromp2" value="2" name="positivo" onclick="addMarrom()">
+                <label for="marromp2">+2</label>
+                <input type="radio" id="marromp1" value="1" name="positivo" onclick="addMarrom()">
+                <label for="marromp1">+1</label>               
             </form>
     
     
@@ -195,45 +177,43 @@
                 <span>Remover pontos</span>
                 <br>
     
-                <input type="radio" value="5" name="negativo" onclick="rmMarrom()">
-                <label for="amarelon5">-5</label>
+                <input type="radio" id="marromn5" value="5" name="negativo" onclick="rmMarrom()">
+                <label for="marromn5">-5</label>
     
-                <input type="radio" value="4" name="negativo" onclick="rmMarrom()">
-                <label for="amarelon5">-4</label>
+                <input type="radio" id="marromn4" value="4" name="negativo" onclick="rmMarrom()">
+                <label for="marromn4">-4</label>
     
-                <input type="radio" value="3" name="negativo" onclick="rmMarrom()">
-                <label for="amarelon5">-3</label>
+                <input type="radio" id="marromn3" value="3" name="negativo" onclick="rmMarrom()">
+                <label for="marromn3">-3</label>
     
-                <input type="radio" value="2" name="negativo" onclick="rmMarrom()">
-                <label for="amarelon5">-2</label>
+                <input type="radio" id="marromn2" value="2" name="negativo" onclick="rmMarrom()">
+                <label for="amarromn2">-2</label>
     
-                <input type="radio" value="1" name="negativo" onclick="rmMarrom()">
-                <label for="amarelon5">-1</label>
+                <input type="radio" id="marromn1" value="1" name="negativo" onclick="rmMarrom()">
+                <label for="marromn1">-1</label>
             </form>
         
 
     </div>
     <div class="equipe">
-        <h5>Roxa</h5>
-
+        <h5 style="color: rgb(82, 63, 111); font-weight: bold">Roxa</h5>
         <form action="addRoxaPontos" method="post" id="addRoxa">
                 <span>Adicionar pontos</span>
                 <br>
+                <input type="radio" id="roxap5" value="5" name="positivo" onclick="addRoxa()">
+                <label for="roxap5">+5</label>
     
-                <input type="radio" value="5" name="positivo" onclick="addRoxa()">
-                <label for="5">+5</label>
+                <input type="radio" id="roxap4" value="4" name="positivo" onclick="addRoxa()">
+                <label for="roxap4">+4</label>
     
-                <input type="radio" value="4" name="positivo" onclick="addRoxa()">
-                <label for="4">+4</label>
+                <input type="radio" id="roxap3" value="3" name="positivo" onclick="addRoxa()">
+                <label for="roxap3">+3</label>
     
-                <input type="radio" value="3" name="positivo" onclick="addRoxa()">
-                <label for="3">+3</label>
+                <input type="radio" id="roxap2" value="2" name="positivo" onclick="addRoxa()">
+                <label for="roxap2">+2</label>
     
-                <input type="radio" value="2" name="positivo" onclick="addRoxa()">
-                <label for="2">+2</label>
-    
-                <input type="radio" value="1" name="positivo" onclick="addRoxa()">
-                <label for="1">+1</label>               
+                <input type="radio" id="roxap1" value="1" name="positivo" onclick="addRoxa()">
+                <label for="roxap1">+1</label>               
             </form>
     
     
@@ -241,43 +221,42 @@
                 <span>Remover pontos</span>
                 <br>
     
-                <input type="radio" value="5" name="negativo" onclick="rmRoxa()">
-                <label for="amarelon5">-5</label>
+                <input type="radio" id="roxan5" value="5" name="negativo" onclick="rmRoxa()">
+                <label for="roxan5">-5</label>
     
-                <input type="radio" value="4" name="negativo" onclick="rmRoxa()">
-                <label for="amarelon5">-4</label>
+                <input type="radio" id="roxan4" value="4" name="negativo" onclick="rmRoxa()">
+                <label for="roxan4">-4</label>
     
-                <input type="radio" value="3" name="negativo" onclick="rmRoxa()">
-                <label for="amarelon5">-3</label>
+                <input type="radio" id="roxan3" value="3" name="negativo" onclick="rmRoxa()">
+                <label for="roxan3">-3</label>
     
-                <input type="radio" value="2" name="negativo" onclick="rmRoxa()">
-                <label for="amarelon5">-2</label>
+                <input type="radio" id="roxan2" value="2" name="negativo" onclick="rmRoxa()">
+                <label for="roxan2">-2</label>
     
-                <input type="radio" value="1" name="negativo" onclick="rmRoxa()">
-                <label for="amarelon5">-1</label>
+                <input type="radio" id="roxan1" value="1" name="negativo" onclick="rmRoxa()">
+                <label for="roxan1">-1</label>
             </form>
     </div>
     <div class="equipe">
-        <h5>Verde</h5>
-
+        <h5 style="color: rgb(0, 104, 57); font-weight: bold">Verde</h5>
         <form action="addVerdePontos" method="post" id="addVerde">
                 <span>Adicionar pontos</span>
                 <br>
     
-                <input type="radio" value="5" name="positivo" onclick="addVerde()">
-                <label for="5">+5</label>
+                <input type="radio" id="verdep5" value="5" name="positivo" onclick="addVerde()">
+                <label for="verdep5">+5</label>
     
-                <input type="radio" value="4" name="positivo" onclick="addVerde()">
-                <label for="4">+4</label>
+                <input type="radio" id="verdep4" value="4" name="positivo" onclick="addVerde()">
+                <label for="verdep4">+4</label>
     
-                <input type="radio" value="3" name="positivo" onclick="addVerde()">
-                <label for="3">+3</label>
+                <input type="radio" id="verdep3" value="3" name="positivo" onclick="addVerde()">
+                <label for="verdep3">+3</label>
     
-                <input type="radio" value="2" name="positivo" onclick="addVerde()">
-                <label for="2">+2</label>
+                <input type="radio" id="verdep2" value="2" name="positivo" onclick="addVerde()">
+                <label for="verdep2">+2</label>
     
-                <input type="radio" value="1" name="positivo" onclick="addVerde()">
-                <label for="1">+1</label>               
+                <input type="radio" id="verdep1" value="1" name="positivo" onclick="addVerde()">
+                <label for="verdep1">+1</label>               
             </form>
     
     
@@ -285,44 +264,42 @@
                 <span>Remover pontos</span>
                 <br>
     
-                <input type="radio" value="5" name="negativo" onclick="rmVerde()">
-                <label for="amarelon5">-5</label>
+                <input type="radio" id="verden5" value="5" name="negativo" onclick="rmVerde()">
+                <label for="verden5">-5</label>
     
-                <input type="radio" value="4" name="negativo" onclick="rmVerde()">
-                <label for="amarelon5">-4</label>
+                <input type="radio" id="verden4"  value="4" name="negativo" onclick="rmVerde()">
+                <label for="verden4">-4</label>
     
-                <input type="radio" value="3" name="negativo" onclick="rmVerde()">
-                <label for="amarelon5">-3</label>
+                <input type="radio" id="verden3" value="3" name="negativo" onclick="rmVerde()">
+                <label for="verden3">-3</label>
     
-                <input type="radio" value="2" name="negativo" onclick="rmVerde()">
-                <label for="amarelon5">-2</label>
+                <input type="radio" id="verden2" value="2" name="negativo" onclick="rmVerde()">
+                <label for="verden2">-2</label>
     
-                <input type="radio" value="1" name="negativo" onclick="rmVerde()">
-                <label for="amarelon5">-1</label>
+                <input type="radio" id="verden1" value="1" name="negativo" onclick="rmVerde()">
+                <label for="verden1">-1</label>
             </form>
 
     </div>
     <div class="equipe">
-        <h5>Vermelha</h5>
-
+        <h5 style="color: rgb(240, 34, 35); font-weight: bold">Vermelha</h5>
         <form action="addVermelhaPontos" method="post" id="addVermelha">
                 <span>Adicionar pontos</span>
                 <br>
+                <input type="radio" id="vermelhap5" value="5" name="positivo" onclick="addVermelha()">
+                <label for="vermelhap5">+5</label>
     
-                <input type="radio" value="5" name="positivo" onclick="addVermelha()">
-                <label for="5">+5</label>
+                <input type="radio" id="vermelhap4" value="4" name="positivo" onclick="addVermelha()">
+                <label for="vermelhap4">+4</label>
     
-                <input type="radio" value="4" name="positivo" onclick="addVermelha()">
-                <label for="4">+4</label>
+                <input type="radio" id="vermelhap3" value="3" name="positivo" onclick="addVermelha()">
+                <label for="vermelhap3">+3</label>
     
-                <input type="radio" value="3" name="positivo" onclick="addVermelha()">
-                <label for="3">+3</label>
+                <input type="radio" id="vermelhap2" value="2" name="positivo" onclick="addVermelha()">
+                <label for="vermelhap2">+2</label>
     
-                <input type="radio" value="2" name="positivo" onclick="addVermelha()">
-                <label for="2">+2</label>
-    
-                <input type="radio" value="1" name="positivo" onclick="addVermelha()">
-                <label for="1">+1</label>               
+                <input type="radio" id="vermelhap1" value="1" name="positivo" onclick="addVermelha()">
+                <label for="vermelhap1">+1</label>               
             </form>
     
     
@@ -330,24 +307,27 @@
                 <span>Remover pontos</span>
                 <br>
     
-                <input type="radio" value="5" name="negativo" onclick="rmVermelha()">
-                <label for="amarelon5">-5</label>
+                <input type="radio" id="vermelhan5" value="5" name="negativo" onclick="rmVermelha()">
+                <label for="vermelhan5">-5</label>
     
-                <input type="radio" value="4" name="negativo" onclick="rmVermelha()">
-                <label for="amarelon5">-4</label>
+                <input type="radio" id="vermelhan4" value="4" name="negativo" onclick="rmVermelha()">
+                <label for="vermelhan4">-4</label>
     
-                <input type="radio" value="3" name="negativo" onclick="rmVermelha()">
-                <label for="amarelon5">-3</label>
+                <input type="radio" id="vermelhan3" value="3" name="negativo" onclick="rmVermelha()">
+                <label for="vermelhan3">-3</label>
     
-                <input type="radio" value="2" name="negativo" onclick="rmVermelha()">
-                <label for="amarelon5">-2</label>
+                <input type="radio" id="vermelhan2" value="2" name="negativo" onclick="rmVermelha()">
+                <label for="vermelhan2">-2</label>
     
-                <input type="radio" value="1" name="negativo" onclick="rmVermelha()">
-                <label for="amarelon5">-1</label>
+                <input type="radio" id="vermelhan1" value="1" name="negativo" onclick="rmVermelha()">
+                <label for="vermelhan1">-1</label>
             </form>
     </div>
 
     <script src="js/submitPontos.js"></script>
 
+    <br>
+    <br>
+    <br>
 
 </div>

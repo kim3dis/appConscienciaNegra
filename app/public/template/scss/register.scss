@@ -16,7 +16,7 @@ textarea:focus, input:focus, select:focus {
 
     .containerLogin {
         margin-top: 180px;
-        #nickname, #password {
+        #nickname, #password, #confirmpassword {
             // position: absolute;
             display: block;
             border: none;
@@ -61,7 +61,7 @@ textarea:focus, input:focus, select:focus {
         }
     }
     .footerLogin {
-        margin-top: 150px;
+        margin-top: 120px;
         text-align: center;
     }
 }

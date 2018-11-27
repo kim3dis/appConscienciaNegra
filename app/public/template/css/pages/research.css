@@ -1,0 +1,18 @@
+.options {
+  margin-bottom: 40px; }
+  .options input {
+    margin-left: 50px; }
+  .options label {
+    width: 70%;
+    height: 30px; }
+
+#submit {
+  width: 90%;
+  height: 40px;
+  background: #eb782c;
+  color: white;
+  border: none;
+  font-weight: bold;
+  border-radius: 10px; }
+
+/*# sourceMappingURL=research.css.map */

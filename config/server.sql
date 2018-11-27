@@ -4,16 +4,24 @@ USE usuarios;
 CREATE TABLE info_usuarios(
 	ID INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
     NOME VARCHAR(30) UNIQUE NOT NULL,
-    SENHA VARCHAR(255) NOT NULL    
+    SENHA VARCHAR(255) NOT NULL,
+    clareza TEXT
 )CHARSET = utf8;
 
+ALTER TABLE info_usuarios ADD COLUMN clareza TEXT;
+ALTER TABLE info_usuarios ADD COLUMN considera TEXT;
+ALTER TABLE info_usuarios ADD COLUMN abordado TEXT;
 
-insert info_usuarios(NOME, SENHA) values('admin', 'nimda') where = "pinto";
+insert info_usuarios(NOME, SENHA) values('kim3dis', 'root');
 
 truncate info_usuarios;
 
+UPDATE `usuarios`.`info_usuarios` SET `clareza`='t', `considera`='t', `abordado`='t' WHERE `ID`='1';
+UPDATE equipes SET pontos = '0' WHERE equipe = 'amarela';
 
+UPDATE info_usuarios SET clareza = 't', considera = 't', abordado = 't' WHERE NOME = 'kim3dis';
 
+SELECT NOME, clareza, considera, abordado FROM info_usuarios;
 SELECT * FROM info_usuarios;
 
 SELECT SENHA from info_usuarios where NOME = "kim3dis";
@@ -39,6 +47,7 @@ INSERT INTO `usuarios`.`equipes` (`id`, `equipe`, `pontos`) VALUES ('8', 'vermel
 
 
 UPDATE equipes SET pontos = '0' WHERE equipe = 'amarela';
+UPDATE equipes SET pontos = '0' WHERE equipe = 'amarela';
 
 SELECT * FROM equipes order by pontos;
 
@@ -46,3 +55,4 @@ SELECT equipe FROM equipes;
 
 SELECT pontos from equipes where equipe = "amarela";
 
+SELECT ID, considera FROM info_usuarios WHERE considera = "Pardo(a)";

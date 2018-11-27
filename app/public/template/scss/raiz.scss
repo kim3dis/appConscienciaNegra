@@ -1,0 +1,27 @@
+.cont {
+    grid-template-areas: 
+    "signup"
+    "login";
+
+    grid-auto-rows: 1fr 1fr; 
+
+    .login {
+        position: absolute;
+        grid-area: login;
+        background: rgb(201, 199, 199);
+        height: 50%;
+        width: 100%;
+        top: 0;
+        color: black;
+    }
+    .signup {
+        position: absolute;
+        grid-area: signup;
+        background: rgb(39, 39, 39);
+        color: white;
+        height: 50%;
+        width: 100%;
+        // margin-top: 50%;
+        bottom: 0;
+    }
+}

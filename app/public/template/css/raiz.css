@@ -1,0 +1,21 @@
+.cont {
+  grid-template-areas: "signup" "login";
+  grid-auto-rows: 1fr 1fr; }
+  .cont .login {
+    position: absolute;
+    grid-area: login;
+    background: #c9c7c7;
+    height: 50%;
+    width: 100%;
+    top: 0;
+    color: black; }
+  .cont .signup {
+    position: absolute;
+    grid-area: signup;
+    background: #272727;
+    color: white;
+    height: 50%;
+    width: 100%;
+    bottom: 0; }
+
+/*# sourceMappingURL=raiz.css.map */

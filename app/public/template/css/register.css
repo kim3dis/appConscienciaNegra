@@ -8,7 +8,7 @@ textarea:focus, input:focus, select:focus {
   padding-top: 30px; }
 .container .containerLogin {
   margin-top: 180px; }
-  .container .containerLogin #nickname, .container .containerLogin #password {
+  .container .containerLogin #nickname, .container .containerLogin #password, .container .containerLogin #confirmpassword {
     display: block;
     border: none;
     background: white;
@@ -22,10 +22,10 @@ textarea:focus, input:focus, select:focus {
     border-bottom: 1px solid #72727294;
     border-radius: 2px;
     transition: border-bottom-color 1s; }
-    .container .containerLogin #nickname::placeholder, .container .containerLogin #password::placeholder {
+    .container .containerLogin #nickname::placeholder, .container .containerLogin #password::placeholder, .container .containerLogin #confirmpassword::placeholder {
       font-variant-caps: all-small-caps;
       color: #72727294; }
-    .container .containerLogin #nickname:focus, .container .containerLogin #nickname:hover, .container .containerLogin #password:focus, .container .containerLogin #password:hover {
+    .container .containerLogin #nickname:focus, .container .containerLogin #nickname:hover, .container .containerLogin #password:focus, .container .containerLogin #password:hover, .container .containerLogin #confirmpassword:focus, .container .containerLogin #confirmpassword:hover {
       border-bottom: 1px solid #F1792B;
       transition: border-bottom-color 1s; }
   .container .containerLogin .btnReg {
@@ -39,7 +39,7 @@ textarea:focus, input:focus, select:focus {
     background-image: linear-gradient(to right, rgba(238, 149, 89, 0.849), #d86e28);
     box-shadow: 0px 1px 20px 0px #F1792B; }
 .container .footerLogin {
-  margin-top: 150px;
+  margin-top: 120px;
   text-align: center; }
 
 /*# sourceMappingURL=register.css.map */

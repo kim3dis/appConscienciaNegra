@@ -62,6 +62,8 @@ a {
     background-image: url("../../../images/userarea/logout_in.png"); }
   .mainContainer .optContainer .control {
     background-image: url("../../../images/userarea/control_in.png"); }
+  .mainContainer .optContainer .data {
+    background-image: url("../../../images/userarea/data_in.png"); }
   .mainContainer .optContainer .displaynone {
     display: none; }
 

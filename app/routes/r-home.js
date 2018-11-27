@@ -1,19 +1,19 @@
 module.exports = function(app){
     app.get('/home', function(req, res){
+        //verificar autorização
+        (function(req, res){
+            if(!req.session.user){
+              res.redirect('login');  
+            }
+        })(req, res);
 
-        var store = require('store');
-        var nickname = store.get('token').nickname;
-        console.log(nickname);
+
+
+        var nickname = req.session.user;
+        // console.log(nickname);
+
         var titulo = "Início";
         res.render('home', {nome: nickname, titulo: titulo});
 
-    });
-    app.get('/', function(req, res){
-
-        var store = require('store');
-        var nickname = store.get('token').nickname;
-        console.log(nickname);
-        var titulo = "Início";
-        res.render('home', {nome: nickname, titulo: titulo});
     });
 }
